@@ -1,4 +1,3 @@
-from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from collections import Counter
 from nltk.sentiment import SentimentIntensityAnalyzer
@@ -7,8 +6,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import nltk
 import string
-from collections import Counter
-import re
 nltk.download('vader_lexicon')
 nltk.download('stopwords')
 
@@ -68,9 +65,9 @@ def most_common_words(text_series, title, num_words=20):
     plt.title(title)
     plt.show()
 
-
+# positive words appear more in non disaster tweets
 # most_common_words(train_df[train_df['target'] == 1]['text'],
-#                  'Most common words in disaster tweets')
+    # 'Most common words in disaster tweets')
 
-most_common_words(train_df[train_df['target'] == 0]['text'],
-                  'Most common words in non-disaster tweets')
+# most_common_words(train_df[train_df['target'] == 0]['text'],
+    # 'Most common words in non-disaster tweets')
