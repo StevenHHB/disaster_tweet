@@ -1,5 +1,5 @@
 
-# Disaster Tweet Classification Project
+# DEMO: Disaster Tweet Classification Project
 
 ## Goal of the Problem
 
